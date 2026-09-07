@@ -1,0 +1,33 @@
+{
+    "name": "hyperphp/hyperphp",
+    "description": "Framework PHP réactif, server-driven, sans build JS obligatoire. Composants PHP, état signé HMAC, patch DOM différentiel via SSE/HTTP.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["php", "hypermedia", "reactive", "server-driven-ui", "hmac", "frankenphp", "octane"],
+    "authors": [
+        {
+            "name": "Tamara Homsi",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HyperPHP\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperPHP\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable"
+}
